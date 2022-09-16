@@ -29,7 +29,7 @@ const Footer = () => {
             <Link to="/">Gallery-5</Link>
           </li>
         </ul>
-        <p>Copyright 2022 JkNg Photography</p>
+        <p>Copyright 2022 JKNg Photography</p>
       </div>
       <p>
         <a href="https://www.instagram.com/jkng_photography/" target="_blank" rel="noopener noreferrer">
