@@ -24,6 +24,6 @@ const About = () => {
   );
 };
 
-export const Head = () => <title>About</title>;
+// export const Head = () => <title>About</title>;
 
 export default About;
