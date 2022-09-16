@@ -1,16 +1,19 @@
 import * as React from "react";
 import * as styles from "../styles/layout.module.css";
+import { useSiteMetadata } from "../hooks/use-site-metadata";
 import Footer from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ pageTitle, children }) => {
+  const { title } = useSiteMetadata();
+
   return (
     <div className={styles.layout}>
+      <title>
+        {pageTitle} | {title}
+      </title>
       <Header />
-      <main>
-        {/* <h1>{pageTitle}</h1> */}
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   );

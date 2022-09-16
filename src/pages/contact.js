@@ -20,6 +20,6 @@ const Contact = () => {
   );
 };
 
-export const Head = () => <title>Contact</title>;
+// export const Head = () => <title>Contact</title>;
 
 export default Contact;
