@@ -21,5 +21,13 @@ module.exports = {
         path: `${__dirname}/portfolio`,
       },
     },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token:
+          "IGQVJXeDF6T0paNWtWQlN5LWNpM0NwdjhGeU9VS1dNMHQ2ZAHJ4YXM3VWd5ZAi12LWhxRFEwLTRob3AyMjNoX0RLNExUSlk5cURsV2ZAGYlpBMjdyUTBZAc2NjQzdyOVlRR3ZAjSVpQZAmQyNzViYk53VHNsVkZAlTHpCUkE5YThN",
+        limit: 4,
+      },
+    },
   ],
 };
