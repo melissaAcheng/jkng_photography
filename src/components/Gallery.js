@@ -15,7 +15,7 @@ const Gallery = () => {
             featuredImageAlt
             featuredImage {
               childImageSharp {
-                gatsbyImageData(width: 750, transformOptions: { cropFocus: CENTER }, aspectRatio: 1)
+                gatsbyImageData(width: 1125, transformOptions: { cropFocus: CENTER }, aspectRatio: 1.5)
               }
             }
           }
