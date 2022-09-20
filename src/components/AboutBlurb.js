@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 
 const AboutBlurb = () => {
   return (
-    <div pageTitle={"About"}>
+    <div>
       <div className={styles.about}>
         <StaticImage src="../images/jeff_portrait_2.jpg" alt="Jeff Portrait" />
         <div className={styles.text}>

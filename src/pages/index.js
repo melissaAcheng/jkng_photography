@@ -2,13 +2,14 @@ import * as React from "react";
 import Gallery from "../components/Gallery";
 import Layout from "../components/Layout";
 import AboutBlurb from "../components/AboutBlurb";
+import Instagram from "../components/Instagram";
 
 const IndexPage = () => {
   return (
     <Layout pageTitle={"Home"}>
       <Gallery />
       <AboutBlurb />
-      <p>Instagram Feed</p>
+      <Instagram />
     </Layout>
   );
 };
