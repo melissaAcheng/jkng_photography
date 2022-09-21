@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import * as styles from "../styles/footer.module.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => {
   return (
@@ -29,11 +30,11 @@ const Footer = () => {
             <Link to="/">Gallery-5</Link>
           </li>
         </ul>
-        <p>Copyright 2022 JKNg Photography</p>
+        <p>Copyright 2022 Jeffrey Ng Photography</p>
       </div>
       <p>
         <a href="https://www.instagram.com/jkng_photography/" target="_blank" rel="noopener noreferrer">
-          Contact
+          {/* <StaticImage src="../images/instagram-logo.png" alt="Instagram Logo" width="40" /> */}
         </a>
       </p>
     </footer>
