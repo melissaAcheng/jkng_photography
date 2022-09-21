@@ -43,19 +43,37 @@ const Gallery = () => {
     <div className={styles.wrapper}>
       <div className={styles.one}>
         {data.one.nodes.map((node) => (
-          <div key={node.frontmatter.title}>
+          <div key={node.frontmatter.title} className={styles.container}>
             <Link to={`portfolio/${node.frontmatter.slug}`}>
-              <GatsbyImage image={getImage(node.frontmatter.featuredImage)} alt={node.frontmatter.featuredImageAlt} />
+              <GatsbyImage
+                image={getImage(node.frontmatter.featuredImage)}
+                alt={node.frontmatter.featuredImageAlt}
+                className={styles.image}
+              />
             </Link>
+            <div className={styles.middle}>
+              <Link to={`portfolio/${node.frontmatter.slug}`} className={styles.text}>
+                {node.frontmatter.title}
+              </Link>
+            </div>
           </div>
         ))}
       </div>
       <div className={styles.two}>
         {data.two.nodes.map((node) => (
-          <div key={node.frontmatter.title}>
+          <div key={node.frontmatter.title} className={styles.container}>
             <Link to={`portfolio/${node.frontmatter.slug}`}>
-              <GatsbyImage image={getImage(node.frontmatter.featuredImage)} alt={node.frontmatter.featuredImageAlt} />
+              <GatsbyImage
+                image={getImage(node.frontmatter.featuredImage)}
+                alt={node.frontmatter.featuredImageAlt}
+                className={styles.image}
+              />
             </Link>
+            <div className={styles.middle}>
+              <Link to={`portfolio/${node.frontmatter.slug}`} className={styles.text}>
+                {node.frontmatter.title}
+              </Link>
+            </div>
           </div>
         ))}
       </div>
