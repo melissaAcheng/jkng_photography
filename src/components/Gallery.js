@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as styles from "../styles/gallery.module.css";
 
@@ -44,14 +44,18 @@ const Gallery = () => {
       <div className={styles.one}>
         {data.one.nodes.map((node) => (
           <div key={node.frontmatter.title}>
-            <GatsbyImage image={getImage(node.frontmatter.featuredImage)} alt={node.frontmatter.featuredImageAlt} />
+            <Link to={`portfolio/${node.frontmatter.slug}`}>
+              <GatsbyImage image={getImage(node.frontmatter.featuredImage)} alt={node.frontmatter.featuredImageAlt} />
+            </Link>
           </div>
         ))}
       </div>
       <div className={styles.two}>
         {data.two.nodes.map((node) => (
           <div key={node.frontmatter.title}>
-            <GatsbyImage image={getImage(node.frontmatter.featuredImage)} alt={node.frontmatter.featuredImageAlt} />
+            <Link to={`portfolio/${node.frontmatter.slug}`}>
+              <GatsbyImage image={getImage(node.frontmatter.featuredImage)} alt={node.frontmatter.featuredImageAlt} />
+            </Link>
           </div>
         ))}
       </div>
