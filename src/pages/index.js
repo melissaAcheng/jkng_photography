@@ -9,7 +9,8 @@ const IndexPage = () => {
     <Layout pageTitle={"Home"}>
       <Gallery />
       <AboutBlurb />
-      <Instagram />
+      {/* <Instagram /> */}
+      <h3>Follow Along @jkng_photography</h3>
     </Layout>
   );
 };

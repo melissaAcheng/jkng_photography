@@ -4,6 +4,22 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as styles from "../styles/instagram.module.css";
 
 const Instagram = () => {
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allInstagramContent {
+  //       nodes {
+  //         caption
+  //         media_url
+  //         localFile {
+  //           childImageSharp {
+  //             gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 300, aspectRatio: 1)
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+  // console.log(data);
   return (
     <div className={styles.wrapper}>
       {/* <div className={styles.box}>
