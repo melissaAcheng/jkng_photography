@@ -4,7 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `JKNg Photography`,
+    title: `Jeffrey Ng Photography`,
+    description: `Photography Portfolio Site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
