@@ -1,42 +1,24 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import { useState } from "react";
+// import { Link } from "gatsby";
 import * as styles from "../styles/footer.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div>
-        <ul className={styles.links}>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/">Gallery-1</Link>
-          </li>
-          <li>
-            <Link to="/">Gallery-2</Link>
-          </li>
-          <li>
-            <Link to="/">Gallery-3</Link>
-          </li>
-          <li>
-            <Link to="/">Gallery-4</Link>
-          </li>
-          <li>
-            <Link to="/">Gallery-5</Link>
-          </li>
-        </ul>
+      <div className={styles.content}>
         <p>Copyright 2022 Jeffrey Ng Photography</p>
+        {/* <button onClick={handleClick} className={styles.arrow}>
+          <StaticImage src="../images/arrow-up.png" alt="Arrow Up" width={20} />
+        </button> */}
+        <div className={styles.contact}>
+          <p>Contact</p>
+          <a href="https://www.instagram.com/jkng_photography/" target="_blank" rel="noopener noreferrer">
+            <StaticImage src="../images/instagram-logo.png" alt="Instagram Logo" width={35} />
+          </a>
+        </div>
       </div>
-      <p>
-        <a href="https://www.instagram.com/jkng_photography/" target="_blank" rel="noopener noreferrer">
-          {/* <StaticImage src="../images/instagram-logo.png" alt="Instagram Logo" width="40" /> */}
-        </a>
-      </p>
     </footer>
   );
 };

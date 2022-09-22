@@ -22,6 +22,7 @@ const Instagram = () => {
   // console.log(data);
   return (
     <div className={styles.wrapper}>
+      <h3>Instagram Feed Here</h3>
       {/* <div className={styles.box}>
         <div className={styles.text}>
           <h3>
