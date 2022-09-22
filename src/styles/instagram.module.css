@@ -4,6 +4,11 @@
   margin: 50px 0px;
 }
 
+/* Temp */
+h3 {
+  text-align: center;
+}
+
 .feed {
   display: flex;
   gap: 20px;
