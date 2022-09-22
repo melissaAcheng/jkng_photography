@@ -1,14 +1,15 @@
 import * as React from "react";
 import Navbar from "./Navbar";
 import * as styles from "../styles/header.module.css";
+import { Link } from "gatsby";
 
 const Header = () => {
   return (
     <div className={styles.header}>
-      <div>
+      <Link to="/" className={styles.logo}>
         <h2>Jeffrey Ng</h2>
         <h2>Photography</h2>
-      </div>
+      </Link>
       <Navbar />
     </div>
   );
