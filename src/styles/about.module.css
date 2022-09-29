@@ -66,3 +66,17 @@
 .button:focus {
   outline: 1px transparent;
 }
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media only screen and (max-width: 780px) {
+  .about {
+    display: block;
+  }
+  
+  .text {
+    margin: 20px 0px;
+  }
+  
+}
