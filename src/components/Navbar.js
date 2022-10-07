@@ -8,7 +8,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div>
-      <nav className={`${navbarOpen ? styles.showMenu : ""}`}>
+      <nav className={styles.navBar}>
         <div className={styles.hamburger}>
           <Hamburger direction="left" toggled={navbarOpen} toggle={setNavbarOpen} color="#818181" />
         </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <ul className={styles.mobileNav}>
+        <ul className={`${styles.mobileNav} ${navbarOpen ? styles.showMenu : ""}`}>
           <li>
             <Link to="/">Home</Link>
           </li>

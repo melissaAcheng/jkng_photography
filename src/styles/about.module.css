@@ -73,10 +73,15 @@
 @media only screen and (max-width: 780px) {
   .about {
     display: block;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* gap: 0px; */
+    margin: 20px;
+    /* border: 2px solid blue; */
   }
   
   .text {
-    margin: 20px;
+    margin: 20px 0px;
   }
   
 }
